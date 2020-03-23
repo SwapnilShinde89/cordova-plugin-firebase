@@ -121,6 +121,10 @@ exports.activateFetched = function (success, error) {
   exec(success, error, PLUGIN_NAME, "activateFetched", []);
 };
 
+exports.activate = function (success, error) {
+  exec(success, error, PLUGIN_NAME, "activate", []);
+};
+
 exports.fetch = function (cacheExpirationSeconds, success, error) {
   var args = [];
   if (typeof cacheExpirationSeconds === 'number') {
